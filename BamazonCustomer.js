@@ -27,8 +27,6 @@ connection.query('SELECT * FROM products', function (err, res) {
 
 prompt.start();
 
-prompt.message = 'What is the ID of the product you would like to purchase?: ';
-
 prompt.get(['id', 'number'], function(err, result) {
 	idToGet = result.id;
 	numberToPurchase = result.number;
